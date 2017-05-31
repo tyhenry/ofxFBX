@@ -40,6 +40,7 @@ public:
     
     bool isLimb();
     bool hasSkeletonParent();
+	bool isRoot();
     
     void enableAnimation( bool bRecursively=false );
     void disableAnimation( bool bRecursively=false );

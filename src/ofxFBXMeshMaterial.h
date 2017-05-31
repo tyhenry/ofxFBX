@@ -31,6 +31,7 @@ public:
     
     bool hasTexture();
     ofTexture* getTexturePtr();
+	ofTexture*& getTexturePtrRef() { return texture; }
     void enableTextures();
     void disableTextures();
     bool areTexturesEnabled();

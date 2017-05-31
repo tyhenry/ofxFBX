@@ -169,6 +169,11 @@ bool ofxFBXBone::hasSkeletonParent() {
     return fbxNode->GetParent()->GetNodeAttribute()->GetAttributeType() == FbxNodeAttribute::eSkeleton;
 }
 
+bool ofxFBXBone::isRoot()
+{
+	return bIsRoot;
+}
+
 //--------------------------------------------------------------
 FbxSkeleton* ofxFBXBone::getFbxSkeleton() {
     return (FbxSkeleton*) fbxNode->GetNodeAttribute();
